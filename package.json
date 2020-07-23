@@ -62,7 +62,7 @@
     "format"
   ],
   "main": "./dist/index.js",
-  "name": "format-graphql",
+  "name": "@magicmark/format-graphql",
   "nyc": {
     "include": [
       "src/**/*.js"
@@ -78,7 +78,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:gajus/format-graphql.git"
+    "url": "git@github.com:magicmark/format-graphql.git"
   },
   "scripts": {
     "build": "rm -fr ./dist && NODE_ENV=production babel ./src --out-dir ./dist --copy-files --source-maps && flow-copy-source src dist",
@@ -86,5 +86,5 @@
     "lint": "eslint ./src ./test && flow",
     "test": "NODE_ENV=test ava --serial --verbose"
   },
-  "version": "1.3.0"
+  "version": "1.4.0"
 }
